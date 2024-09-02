@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Global/Icons/Caret-Down</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D-header-variation" transform="translate(-1282, -46)" fill="#6B6E75">
+            <g id="Group-6" transform="translate(0, -0)">
+                <g id="Group" transform="translate(0, 30)">
+                    <g id="Group-5" transform="translate(150, 14)">
+                        <g id="Group-4" transform="translate(1098, 0)">
+                            <g id="Global/Icons/Caret-Down" transform="translate(34.0089, 3.6711)">
+                                <path d="M2.33636797,6.32893929 C2.16610587,6.32893929 1.9957606,6.26383936 1.86600541,6.1336395 C1.60607915,5.87323979 1.60607915,5.45139225 1.86600541,5.19099254 L4.72353074,2.32919969 L1.86600541,-0.533113966 C1.60607915,-0.79351368 1.60607915,-1.21536122 1.86600541,-1.47576093 C2.12593167,-1.73616064 2.54701221,-1.73616064 2.80693847,-1.47576093 L6.13399459,1.8573554 C6.39392085,2.11775512 6.39392085,2.53960265 6.13399459,2.80000237 L2.80693847,6.1331187 C2.67697534,6.26436016 2.50667165,6.32893929 2.33636797,6.32893929 Z" id="Path" transform="translate(4, 2.3289) rotate(90) translate(-4, -2.3289)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

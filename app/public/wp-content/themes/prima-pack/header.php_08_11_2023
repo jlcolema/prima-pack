@@ -1,0 +1,98 @@
+<!doctype html>
+<html <?php language_attributes(); ?>>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
+    <!-- navigation -->
+    <header class="main-head">
+        <div class="header_top">
+            <div class="container">
+                <div class="header_top_contant">
+                <?php
+                    $email = get_field('email_us','option');
+                    if($email){
+                ?>
+                    <ul class="email_list">
+                        <li>Email Us: <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+                    </ul>
+                <?php } 
+                    $call = get_field('call_us','option');
+                    if($call){
+                        $phone = preg_replace("/[^0-9]/", "",  get_field('call_us','option'));
+                ?>
+                    <ul class="phone_list">
+                        <li>Call Us: <a href="tel:+1<?php echo $phone; ?>"><?php echo $call; ?></a></li>
+                        <li>
+                            <!-- <select>
+                                <option>us</option>
+                                <option>CA</option>
+                            </select> -->
+                            <?php //echo do_shortcode('[woocs sd=1]'); ?>
+                        </li>
+                    </ul>
+                <?php } ?>
+                </div>
+            </div>
+        </div>
+        <div class="header_in">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                <?php
+                    $logo_img = get_field('header_logo','option');
+                    if($logo_img){
+                ?>
+                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                        <img src="<?php echo $logo_img['url']; ?>" alt="<?php echo $logo_img['alt']; ?>">
+                    </a>
+                <?php } ?>
+                    <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="stick"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <button class="navbar-toggler navbar-toggler-main" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="stick"></span>
+                        </button>
+                        <?php
+                            wp_nav_menu( 
+                                array(
+                                  'theme_location'  => 'header-menu',
+                                  'container'       => '',
+                                  'menu_class'      => 'navbar-nav ms-auto'
+                                ) 
+                            );
+                        ?>
+                    </div>
+                    <div class="search_icon">
+                        <a href="#url"><img src="<?php echo get_template_directory_uri(); ?>/images/search_icon.svg" alt=""></a>
+                    </div>
+                    <a id="mini-cart-count" class="carticon" href="<?php echo wc_get_cart_url(); ?>">
+                        <span><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <button class="navbar-toggler" id="navoverlay" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+            <div class="search-sec">
+                <div class="search-wpr">
+                    <form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                        <input type="search" id="search" name="s" value="<?php echo get_search_query() ?>">
+                        <button type="submit"><img src="<?php echo get_template_directory_uri(); ?>/images/search-oreange.svg" alt=""></button>
+                    </form>
+                    <span class="search-close"><img src="<?php echo get_template_directory_uri(); ?>/images/close.svg" alt=""></span>
+                </div>
+            </div>
+    </header>

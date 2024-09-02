@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="D-PLP_post-V1" transform="translate(-1045, -496)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(150, 339.933)">
+                <g id="Group-8" transform="translate(790, 0)">
+                    <g id="Group-9" transform="translate(83, 149)">
+                        <g id="Group-7" transform="translate(22, 8)">
+                            <path d="M10,0 C15.5234375,0 20,4.4765625 20,10 C20,15.5234375 15.5234375,20 10,20 C4.4765625,20 0,15.5234375 0,10 C0,4.4765625 4.4765625,0 10,0 Z M14.5234375,6.7265625 C14.0976563,6.30078125 13.4023438,6.30078125 12.9765625,6.7265625 L8.75,10.953125 L7.0234375,9.2265625 C6.59765625,8.80078125 5.90234375,8.80078125 5.4765625,9.2265625 C5.05078125,9.65234375 5.05078125,10.3476562 5.4765625,10.7734375 L7.9765625,13.2734375 C8.40234375,13.6992188 9.09765625,13.6992188 9.5234375,13.2734375 L14.5234375,8.2734375 C14.9492188,7.84765625 14.9492188,7.15234375 14.5234375,6.7265625 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
